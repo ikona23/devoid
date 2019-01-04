@@ -3,6 +3,7 @@ import { Button } from 'semantic-ui-react';
 import { Container } from 'semantic-ui-react';
 import EventDashboard from '../../features/event/EventDashboard';
 import NavBar from '../../features/nav/NavBar/NavBar';
+import PropertyListItem from '../../features/event/PropertyList/PropertyListItem';
 class App extends Component {
   render() {
     return (
@@ -10,6 +11,7 @@ class App extends Component {
       <NavBar/>
         <Container className="main">
           <EventDashboard/>
+
         </Container>
       </div>
     );
