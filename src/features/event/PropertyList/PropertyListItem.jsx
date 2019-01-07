@@ -31,9 +31,10 @@ class PropertyListItem extends Component {
               </span>
             </Segment>
             <Segment secondary>
+            <h4>{event.owners.city}</h4>
               <List horizontal>
               {event.owners.map((owner) => (
-            <PropertyListOwn key={owner.id} owner={owner}/>
+            <PropertyListOwn  key={owner.id} owner={owner}/>
         )) }
 
               </List>

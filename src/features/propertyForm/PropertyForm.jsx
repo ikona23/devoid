@@ -4,6 +4,7 @@ import EventDashboard from '../event/EventDashboard';
     
      class PropertyForm extends Component {
          render() {
+            const {handleCancel} = this.props
              return (
                 <Segment>
                     <Form>
@@ -26,7 +27,7 @@ import EventDashboard from '../event/EventDashboard';
                         <Button positive type="submit">
                             Submit
                         </Button>
-                        <Button type="button">Cancel</Button>
+                        <Button onClick={handleCancel} type="button">Cancel</Button>
                     </Form>
                 </Segment>
              )
